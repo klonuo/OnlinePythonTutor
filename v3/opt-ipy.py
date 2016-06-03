@@ -57,7 +57,7 @@ is_python3 = (sys.version_info[0] == 3)
 viewitems = None
 urlopen = None
 if is_python3:
-    import urllib
+    import urllib.request
     urlopen = urllib.request.urlopen
     viewitems = lambda x: x.items()
 
